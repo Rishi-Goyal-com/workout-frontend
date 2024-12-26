@@ -70,3 +70,32 @@ body {
   transform: translateY(6px); /* Move the button down */
   box-shadow: 0 0 0 #a71d2a; /* Remove the shadow */
 }
+
+
+
+/* Animation keyframes */
+@keyframes slideDownFade {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Styling the banner */
+.welcome-banner {
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  width: 100%;
+  animation: slideDownFade 1s ease-in-out;
+}
+
+.welcome-banner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000; /* Green color for the welcome text */
+}
