@@ -111,7 +111,7 @@ function Signup() {
         </form>
         <div className="text-center mt-3">
           <p className="mb-0">
-            Already have an account? <a href="/signin" className="text-primary">Sign In</a>
+            Already have an account? <Link to="/signin" className="text-primary">Sign In</Link>
           </p>
         </div>
       </div>
