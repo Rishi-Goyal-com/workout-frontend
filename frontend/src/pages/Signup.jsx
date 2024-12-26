@@ -45,7 +45,7 @@
 // export default Signup;
 // export default Signup;
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import {Link, useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import { signup } from "../services/authService";
 
 function Signup() {
