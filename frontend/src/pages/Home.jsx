@@ -37,25 +37,47 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Home() {
-    return (
-      <div className="container mt-5">
-        <h1 className="display-4 text-center">Welcome to the Workout App!</h1>
-        <p className="lead text-center">
-          Track your workouts, build schedules, and monitor your performance easily.
-        </p>
-        <p className="text-center">
-          <a href="/build-schedule" className="btn btn-primary btn-lg mx-2">
-            Build Schedule
-          </a>
-          <a href="/today-workout" className="btn btn-secondary btn-lg mx-2">
-            Today's Workout Schedule
-          </a>
-        </p>
-      </div>
-    );
-  }
+// function Home() {
+//     return (
+//       <div className="container mt-5">
+//         <h1 className="display-4 text-center">Welcome to the Workout App!</h1>
+//         <p className="lead text-center">
+//           Track your workouts, build schedules, and monitor your performance easily.
+//         </p>
+//         <p className="text-center">
+//           <a href="/build-schedule" className="btn btn-primary btn-lg mx-2">
+//             Build Schedule
+//           </a>
+//           <a href="/today-workout" className="btn btn-secondary btn-lg mx-2">
+//             Today's Workout Schedule
+//           </a>
+//         </p>
+//       </div>
+//     );
+//   }
   
-  export default Home;
+//   export default Home;
   
 
+import { Link } from "react-router-dom";
+
+function Home() {
+  return (
+    <div className="container mt-5">
+      <h1 className="display-4 text-center">Welcome to the Workout App!</h1>
+      <p className="lead text-center">
+        Track your workouts, build schedules, and monitor your performance easily.
+      </p>
+      <p className="text-center">
+        <Link to="/build-schedule" className="btn btn-primary btn-lg mx-2">
+          Build Schedule
+        </Link>
+        <Link to="/today-workout" className="btn btn-secondary btn-lg mx-2">
+          Today's Workout Schedule
+        </Link>
+      </p>
+    </div>
+  );
+}
+
+export default Home;
