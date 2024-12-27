@@ -445,13 +445,13 @@ const Performance = () => {
                   />
                 </div>
               ) : (
-                <p className="text-muted">No valid data available for {exercise.name}.</p>
+                <p style={{color:"white",opacity:"0.8"}}>No valid data available for {exercise.name}.</p>
               )}
             </Card.Body>
           </Card>
         ))
       ) : (
-        <p className="text-center text-muted">No performance data available.</p>
+        <p className="text-center" style={{color:"white",opacity:"0.8"}}>No performance data available.</p>
       )}
     </Container>
   );

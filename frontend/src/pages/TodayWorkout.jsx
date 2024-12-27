@@ -223,7 +223,7 @@ function TodayWorkout() {
           ))}
         </ul>
       ) : (
-        <p className="text-muted">No exercises scheduled for today.</p>
+        <p style={{color:"white",opacity:"0.8"}}>No exercises scheduled for today.</p>
       )}
 
       {selectedExercise && (

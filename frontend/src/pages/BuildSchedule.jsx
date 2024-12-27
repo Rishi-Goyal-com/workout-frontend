@@ -175,7 +175,7 @@ function BuildSchedule() {
 
       {/* Display existing exercises */}
       <div className="mb-4">
-        <h3>Exercises:</h3>
+        <h3 style={{color:"white",opacity:"0.8"}}>Exercises:</h3>
         {exercises.length > 0 ? (
           <ul className="list-group">
             {exercises.map((exercise, idx) => (
@@ -195,7 +195,7 @@ function BuildSchedule() {
             ))}
           </ul>
         ) : (
-          <p className="text-muted">No exercises added for {day} yet.</p>
+          <p style={{color:"white",opacity:"0.8"}}>No exercises added for {day} yet.</p>
         )}
       </div>
 
