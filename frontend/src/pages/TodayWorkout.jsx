@@ -204,7 +204,8 @@ function TodayWorkout() {
 
   return (
     <div className="container mt-4">
-      <h2 className="text-center mb-4">Today's Workout - {currentDay}</h2>
+      <h2 className="display-4 text-center" style={{color:"white",textShadow: "0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgb(255, 255, 255)"
+}}>Today's Workout - {currentDay}</h2>
 
       {exercises.length > 0 ? (
         <ul className="list-group mb-4">

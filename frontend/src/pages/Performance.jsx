@@ -385,7 +385,8 @@ const Performance = () => {
 
   return (
     <Container className="mt-5">
-      <h1 className="text-center mb-4">Your Workout Performance</h1>
+      <h1 className="display-4 text-center" style={{color:"white",textShadow: "0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgb(255, 255, 255)"
+}}>Your Workout Performance</h1>
       {loading ? (
         <div className="d-flex justify-content-center">
           <Spinner animation="border" variant="primary" />

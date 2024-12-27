@@ -157,7 +157,8 @@ function BuildSchedule() {
 
   return (
     <div className="container mt-4">
-      <h2 className="text-center mb-4">Build Schedule for {day}</h2>
+      <h2 className="display-4 text-center" style={{color:"white",textShadow: "0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgb(255, 255, 255)"
+}}>Build Schedule for {day}</h2>
 
       {/* Dropdown for selecting the day */}
       <div className="d-flex justify-content-center mb-4">

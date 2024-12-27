@@ -64,8 +64,12 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="container mt-5">
-      <h1 className="display-4 text-center">Welcome to the Workout App!</h1>
-      <p className="lead text-center">
+      <h1 className="display-4 text-center" style={{color:"white",textShadow: "0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgb(255, 255, 255)"
+}}>Welcome to the Workout Scheduler!</h1>
+      <p className="lead text-center" style={{color:"white", textShadow: "0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 1)"
+
+// White glow effect
+}}>
         Track your workouts, build schedules, and monitor your performance easily.
       </p>
       <p className="text-center">
