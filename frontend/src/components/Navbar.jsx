@@ -169,20 +169,13 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-
-          {/* Logout Button */}
-          {/* <button
+          <button
             onClick={handleLogout}
-            className="btn btn-danger ms-lg-3"
+            className="btn btn-danger ms-lg-3 btn-3d"
+            style={{ borderRadius: '20px' }}
           >
             Logout
-          </button> */}
-          <button
-  onClick={handleLogout}
-  className="btn btn-danger ms-lg-3 btn-3d"
->
-  Logout
-</button>
+          </button>
 
         </div>
       </div>

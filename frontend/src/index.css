@@ -75,17 +75,17 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
-  background-color: #dc3545; /* Danger color for Logout */
+  background-color: #c8081b; /* Danger color for Logout */
   border: none;
   border-radius: 5px;
-  box-shadow: 0 6px 0 #a71d2a; /* Create the "3D" bottom shadow */
+  box-shadow: 0 6px 0 #c8081b; /* Create the "3D" bottom shadow */
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 .btn-3d:active {
   transform: translateY(6px); /* Move the button down */
-  box-shadow: 0 0 0 #a71d2a; /* Remove the shadow */
+  box-shadow: 0 0 0 #c8081b; /* Remove the shadow */
 }
 
 
