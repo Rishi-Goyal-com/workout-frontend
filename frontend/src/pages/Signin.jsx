@@ -53,6 +53,8 @@ function Signin() {
             animation: "fadeInOut 3s ease-in-out",
             fontSize: "2.5rem",
             fontWeight: "bold",
+            textShadow: "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff", // White glow effect
+
           }}
         >
           Welcome to the Workout Scheduler
@@ -67,6 +69,8 @@ function Signin() {
             animation: "fadeInOut 3s ease-in-out",
             fontSize: "2rem",
             fontWeight: "bold",
+            textShadow: "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff", // White glow effect
+
           }}
         >
           Sign in to get started
