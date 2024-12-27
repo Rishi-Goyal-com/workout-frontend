@@ -5,6 +5,23 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  /* Background image styling */
+  background-image: url('./workoutap.JPG'); /* Path to your image in the public folder */
+  background-size: cover; /* Ensure the image covers the entire screen */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-attachment: fixed; /* Keep the background fixed during scrolling */
+  background-position: center; /* Center the image */
+}
+
+#root {
+  min-height: 100vh; /* Ensure root container fills the viewport */
+}
+
 
 nav ul {
   display: flex;
@@ -72,30 +89,32 @@ body {
 }
 
 
-
-/* Animation keyframes */
-@keyframes slideDownFade {
+@keyframes fadeInOut {
   0% {
-    transform: translateY(-50px);
     opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    opacity: 0;
+    transform: translateY(20px);
   }
 }
 
-/* Styling the banner */
-.welcome-banner {
-  position: absolute;
-  top: 5%;
-  text-align: center;
-  width: 100%;
-  animation: slideDownFade 1s ease-in-out;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.welcome-banner h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #000000; /* Green color for the welcome text */
+.welcome-banner {
+  animation-fill-mode: forwards;
 }
