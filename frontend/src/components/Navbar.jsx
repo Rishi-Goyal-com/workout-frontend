@@ -93,6 +93,103 @@
 // };
 
 // export default Navbar;
+// import React from "react";
+// import { useNavigate, NavLink } from "react-router-dom";
+
+// const Navbar = () => {
+//   const navigate = useNavigate();
+
+//   const handleLogout = () => {
+//     localStorage.removeItem("token"); // Clear user token
+//     navigate("/signin"); // Redirect to signin page
+//   };
+
+//   return (
+//     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+//       <div className="container-fluid">
+//         {/* Brand Logo */}
+//         <NavLink to="/" className="navbar-brand">
+//           Workout Scheduler
+//         </NavLink>
+
+//         {/* Toggle Button for Mobile */}
+//         <button
+//           className="navbar-toggler"
+//           type="button"
+//           data-bs-toggle="collapse"
+//           data-bs-target="#navbarNav"
+//           aria-controls="navbarNav"
+//           aria-expanded="false"
+//           aria-label="Toggle navigation"
+//         >
+//           <span className="navbar-toggler-icon"></span>
+//         </button>
+
+//         {/* Navbar Links */}
+//         <div className="collapse navbar-collapse" id="navbarNav">
+//           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+//             <li className="nav-item">
+//               <NavLink
+//                 to="/"
+//                 className={({ isActive }) =>
+//                   `nav-link ${isActive ? "active" : ""}`
+//                 }
+//               >
+//                 Home
+//               </NavLink>
+//             </li>
+//             <li className="nav-item">
+//               <NavLink
+//                 to="/build-schedule"
+//                 className={({ isActive }) =>
+//                   `nav-link ${isActive ? "active" : ""}`
+//                 }
+//               >
+//                 Build Schedule
+//               </NavLink>
+//             </li>
+//             <li className="nav-item">
+//               <NavLink
+//                 to="/today-workout"
+//                 className={({ isActive }) =>
+//                   `nav-link ${isActive ? "active" : ""}`
+//                 }
+//               >
+//                 Today Workout
+//               </NavLink>
+//             </li>
+//             <li className="nav-item">
+//               <NavLink
+//                 to="/performance"
+//                 className={({ isActive }) =>
+//                   `nav-link ${isActive ? "active" : ""}`
+//                 }
+//               >
+//                 Performance
+//               </NavLink>
+//             </li>
+//           </ul>
+//           <button
+//             onClick={handleLogout}
+//             //className="btn btn-danger ms-lg-3 btn-3d" 
+//             style={{ borderRadius: '20px', fontFamily:"Roboto, sans-serif", color:"black", backgroundColor:"white"}}
+
+//           >
+//             Logout
+//           </button>
+
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+
+
 import React from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 
@@ -109,7 +206,7 @@ const Navbar = () => {
       <div className="container-fluid">
         {/* Brand Logo */}
         <NavLink to="/" className="navbar-brand">
-          Workout App
+          Workout Scheduler
         </NavLink>
 
         {/* Toggle Button for Mobile */}
@@ -127,13 +224,14 @@ const Navbar = () => {
 
         {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{padding:"10px"}}>
             <li className="nav-item">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active" : ""}`
+                  `nav-link ${isActive ? "active" : ""} custom-nav-button`
                 }
+                style={{padding:"10px"}}
               >
                 Home
               </NavLink>
@@ -142,8 +240,9 @@ const Navbar = () => {
               <NavLink
                 to="/build-schedule"
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active" : ""}`
+                  `nav-link ${isActive ? "active" : ""} custom-nav-button`
                 }
+                style={{padding:"10px"}}
               >
                 Build Schedule
               </NavLink>
@@ -152,8 +251,9 @@ const Navbar = () => {
               <NavLink
                 to="/today-workout"
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active" : ""}`
+                  `nav-link ${isActive ? "active" : ""} custom-nav-button`
                 }
+                style={{padding:"10px"}}
               >
                 Today Workout
               </NavLink>
@@ -162,8 +262,9 @@ const Navbar = () => {
               <NavLink
                 to="/performance"
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active" : ""}`
+                  `nav-link ${isActive ? "active" : ""} custom-nav-button`
                 }
+                style={{padding:"10px"}}
               >
                 Performance
               </NavLink>
@@ -171,12 +272,16 @@ const Navbar = () => {
           </ul>
           <button
             onClick={handleLogout}
-            className="btn btn-danger ms-lg-3 btn-3d"
-            style={{ borderRadius: '20px' }}
+            className="custom-btn"
+            style={{
+              borderRadius: '20px',
+              fontFamily: 'Roboto, sans-serif',
+              color: 'white', // Text color
+              backgroundColor: 'black', // Button color
+            }}
           >
             Logout
           </button>
-
         </div>
       </div>
     </nav>

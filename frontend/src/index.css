@@ -118,3 +118,43 @@ body {
 .welcome-banner {
   animation-fill-mode: forwards;
 }
+
+
+
+/* CSS for Navbar links and buttons */
+
+/* Style the navbar links (Home, Build Schedule, etc.) */
+.custom-nav-button {
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white; /* Text color */
+  background-color: black; /* Background color */
+  padding: 8px 15px; /* Button padding */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.custom-nav-button:hover,
+.custom-nav-button:focus {
+  background-color: #333; /* Darker black on hover/focus */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+.custom-nav-button.active {
+  background-color: #444; /* Active button style */
+}
+
+/* Style the logout button with similar design */
+.custom-btn {
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white; /* Text color */
+  background-color: black; /* Button color */
+  padding: 8px 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+  background-color: #333; /* Darker black on hover/focus */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
